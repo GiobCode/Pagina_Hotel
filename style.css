@@ -1,0 +1,197 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body
+{
+	/*background: #78909C;*/
+	 background-image: url("https://www.drodd.com/images16/pastel-blue2.jpg");
+	 text-align: center;
+}
+
+header
+{
+	position: fixed;
+	width: 100%;
+}
+
+.header
+{
+	/*color: #FFF;*/
+	color:#A17119;
+	background: #000000;
+	height: 50px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+
+}
+
+.header1
+{
+
+	-webkit-animation: header1 4s ease-in-out infinite alternate;
+    -moz-animation: header1 ease-in-out infinite alternate;
+    animation: header1 3s ease-in-out infinite alternate;
+
+}
+
+
+@-webkit-keyframes header1
+{
+		
+        from
+        {
+          text-shadow: 0 0 10px #000000;
+        }
+        to
+        {
+          text-shadow:  0 20px #92120B;
+        }
+}
+
+
+nav ul
+{
+	
+	/*background: #05817d;*/
+	background-color:rgba(150,0,0, 0.4);
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+nav ul > li a
+{
+	position: relative;
+}
+
+nav a
+{
+	color: #FFF;
+	display: block;
+	font-size: 10pt;
+	font-family: 'GothamBook';
+	padding: 18px 30px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	transition: background .5s;
+	border-right: 1px solid #000000;
+}
+
+nav .principal > a
+{
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-position: 94% center;
+    background-size: 10px;
+}
+
+nav ul li:hover ul
+{
+	display: block;
+}
+
+nav li ul
+{
+	/*background: #177470;*/
+	/*background: #058170;*/
+	background:#A17119;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	align-items: flex-start;
+	border-radius: 0 0 10px 10px;
+}
+
+nav li ul a
+{
+	position: relative;
+	padding: 10px 30px;
+	border-right: initial;
+}
+
+nav li ul a:hover
+{
+	/*background: #2c9595;*/
+	background: #000000;
+}
+
+a
+{
+	text-decoration: none;
+	font-family: arial;
+	letter-spacing: 1px;
+}
+
+
+
+h3
+{
+	/*background-color:rgba(150,0,0, 0.4);*/
+	color:#000000;
+	height: 50px;
+	font-size: 220%;
+	font-family:Lorean;
+	text-align: center;
+}
+
+#informacion
+{
+     color:White;
+     background-color: #000000;
+     height: 100px;
+     width:1400px;
+     border-style: inset;
+}
+
+#caja1,#caja2,#caja3
+{
+    border: 0px solid black;
+	width: 400px;
+	height: 400px;
+	margin: 25px;
+    float: left;
+}
+
+#container
+{
+	/*background: #058170;*/
+	width:1400px;
+	height:900px;
+	display: -webrit-flex;
+	display: -moz-flex;
+	display: -o-flex;
+	display: flex;
+	/*justify-content:center;*/
+	/*align-items:center;*/
+}
+
+#imagen1,#imagen2,#imagen3
+{
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+}
+ 
+#imagen1:hover{margin-top: 2px;}
+#imagen2:hover{margin-top: 2px;}
+#imagen3:hover{margin-top: 2px;}
+
